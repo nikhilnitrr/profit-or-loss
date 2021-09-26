@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Stocks| Profit & Loss</title>
+  </head>
+  <body>
+    <nav id="navigation">
+      <h1 id="heading">Evaluate my Stocks</h1>
+    </nav>
+    <main id="container">
+      <div id="stocks-container">
+        <section class="section">
+          <label class="input-label" for="initial-price"
+            >Enter initial price of stock 👇</label
+          >
+          <input type="number" id="initial-price" />
+        </section>
+        <section class="section">
+          <label class="input-label" for="quantity"
+            >Enter quantity of stocks 👇</label
+          >
+          <input type="number" id="quantity" />
+        </section>
+        <section class="section">
+          <label class="input-label" for="current-price"
+            >Enter current price of stock 👇</label
+          >
+          <input type="number" id="current-price" />
+        </section>
+
+        <p id="btn" style="cursor: pointer">Evaluate</p>
+        <h2 id="output"></h2>
+      </div>
+    </main>
+    <footer id="footer">
+      <div>My online presence</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
