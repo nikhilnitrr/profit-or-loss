@@ -4,7 +4,6 @@ var currentPrice = document.querySelector("#current-price");
 var btn = document.querySelector("#btn");
 var output = document.querySelector("#output");
 
-
 function profitAmount(sellPrice, costPrice, quantity) {
   return (sellPrice - costPrice) * quantity;
 }
@@ -13,12 +12,10 @@ function lossAmount(sellPrice, costPrice, quantity) {
   return (costPrice - sellPrice) * quantity;
 }
 
-function lossPercent(totalCost) {}
-
 function evaluate() {
-  var inputOne = initialPrice.value;
-  var inputTwo = quantity.value;
-  var inputThree = currentPrice.value;
+  var inputOne = parseInt(initialPrice.value);
+  var inputTwo = parseInt(quantity.value);
+  var inputThree = parseInt(currentPrice.value);
 
   if (!inputOne || !inputTwo || !inputThree) {
     output.innerText = "Please fill out all the fields";
