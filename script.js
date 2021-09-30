@@ -17,7 +17,9 @@ function evaluate() {
   var inputTwo = parseInt(quantity.value);
   var inputThree = parseInt(currentPrice.value);
 
-  if (!inputOne || !inputTwo || !inputThree) {
+  if (inputOne <= 0 || inputTwo <= 0 || inputThree <= 0) {
+    output.innerText = "Please provide valid inputs";
+  } else if (!inputOne || !inputTwo || !inputThree) {
     output.innerText = "Please fill out all the fields";
   } else if (inputTwo <= 0) {
     output.innerText = "Invalid no of stocks";
